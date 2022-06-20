@@ -1,0 +1,26 @@
+.register{
+    background : $reg-background;
+    border-radius: 10.7236px;
+    padding: 40px 45px;
+    margin : 5rem auto;
+    display: flex;
+    justify-content : space-between;
+    flex-direction: row;
+    @include small-screen{
+        flex-direction: column;
+        margin : 5rem auto;
+    }
+    h2{
+        color: $reg-text;
+        line-height:30px;
+        padding: 20px 0;
+    }
+    button{
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin : auto 0;
+        padding : 14px 45px;
+        font-weight: 700;
+    }
+}

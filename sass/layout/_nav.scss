@@ -1,0 +1,73 @@
+nav{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    //list + logo
+    .nav{
+        display : flex;
+       .logo {
+        margin-right: 60px;    
+            @include medium-screen{
+                margin :0 auto;
+            }    
+        a{
+            img{
+                width:75px;
+                margin : auto;
+            }
+        }
+        }
+        .list{
+            @include medium-screen{
+                display :none;
+            }
+            ul{
+                @include medium-screen{ 
+                    flex-direction: column;
+                    position: absolute;
+                    top: 70px;
+                    left: 20px;
+                    padding : 25px 20px;
+                    background-color: $blue-bg;
+                }
+                li{
+                    margin-right : 25px;
+                    @include medium-screen{
+                        margin-bottom: 5px;
+                    }
+                    a{
+                        color: $nav-link;
+                       
+                    }
+                }
+            }
+        } 
+    }
+    //menu button
+    .nav-menu{
+        display: none;
+        svg{ 
+            width: 20px;
+            path{
+                fill :white;
+            }   
+        }
+        @include medium-screen{
+            display :contents;
+        }
+    }
+    //sign up button
+    .button{
+        //medium + small screen
+        @include medium-screen{
+            .btn{
+                padding : 8px 10px
+            }
+            .btn-tr{
+                display :none;
+            }
+        }
+    }
+}
+

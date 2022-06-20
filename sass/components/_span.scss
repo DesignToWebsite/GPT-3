@@ -1,0 +1,11 @@
+.spam{
+    font-size:14px;
+    font-weight: 500;
+    color: $span-top;
+    &.org{
+    color: $span-bn;
+    }
+    &.dark{
+        color:$reg-text;
+    }
+}

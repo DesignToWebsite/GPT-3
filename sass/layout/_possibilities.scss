@@ -1,0 +1,24 @@
+.possibilities{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    @include small-screen{
+        grid-template-columns : 1fr;
+    }
+    .image{
+        img{
+            width: 90%;
+        }
+    }
+    .content{
+       display : flex;
+       flex-direction: column;
+       justify-content:center;
+       h2{
+        font-size:34px;
+        line-height:45px;
+       }
+       p{
+        padding : 20px 0;
+       }
+    }
+}

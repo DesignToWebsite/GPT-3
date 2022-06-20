@@ -1,0 +1,20 @@
+.btn{
+    background: none;
+    color: $nav-link;
+    border : none;
+    padding:  10px 20px;
+    &.btn-org{
+        background :$btn-color;
+        padding:  10px 20px;
+        border-radius: 5px;
+    }
+    &.btn-dark{
+        color: white;
+        background :$reg-text;
+        border-radius: 30px;
+    }
+    &.btn-white{
+        color: white;
+        border : 1px solid white;
+    }
+}

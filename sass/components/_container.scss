@@ -1,0 +1,21 @@
+.container{
+    margin:auto;
+    @include x-large{
+        width: 1140px !important;
+    }
+    @include big-screen {
+        width: 992px !important;
+    }
+    
+    @include medium-screen {
+        width: 720px !important;
+    }
+    @include small-screen {
+        width: 560px !important;
+    }
+    @include x-small-screen {
+        width: 100% !important;
+        padding : 20px !important;
+    }
+    
+}

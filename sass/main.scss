@@ -1,0 +1,21 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/gradientText";
+@import "./components/span";
+
+@import "./layout/nav";
+@import "./layout/header";
+@import "./layout/companies";
+@import "./layout/what-is-GPT";
+@import "./layout/future";
+@import "./layout/possibilities";
+@import "./layout/register";
+@import "./layout/blog";
+@import "./layout/footer";

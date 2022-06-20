@@ -1,0 +1,14 @@
+.companies{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .img{
+        margin:10px 35px;
+        @include medium-screen{
+            margin: 10px 20px;
+        }
+    }
+}

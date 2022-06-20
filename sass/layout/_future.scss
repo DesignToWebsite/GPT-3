@@ -1,0 +1,50 @@
+.future{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include small-screen{
+        grid-template-columns: 1fr;
+    }
+    .col-1{
+        @include small-screen{
+            margin: 40px 0;
+        }
+        h2{
+            font-size:34px;
+            font-weight:800;
+            line-height:45px;
+            width: 80%;
+        }
+    }
+    .col-2{
+        padding: 20px 0;
+        .row{
+            .col{
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                justify-content:space-between;
+                margin-bottom:20px ;
+                @include extra-small-screen{
+                    flex-direction: column;
+                }
+                .header{
+                    h3{
+                        width: 9em;
+                        font-size:18px;
+                        font-weight:800;
+                        line-height: 25px;
+                        @include extra-small-screen{
+                            width: 100%;
+                            margin-bottom:10px;
+                        }
+                    }
+                }
+                .body{
+                    p{
+                        font-size:14px;
+                    }
+                }
+            }
+        }
+    }
+}

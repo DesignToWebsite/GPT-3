@@ -1,0 +1,89 @@
+.header{
+    // height:80vh;
+    .content{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include medium-screen{
+            grid-template-columns: 1fr;
+        }
+        .col-1{
+            @include medium-screen{
+                order : 2;
+            }
+            margin-top: 15px;
+            h1{
+                line-height : 1.29;
+                font-size: 50px;
+                margin : 10px 0;
+                @include extra-small-screen{
+                    line-height : 1.4;
+                    font-size:35px;
+                    font-weight: 800;
+                }
+            }
+            p{
+                font-size:20px;
+                width: 98%;
+                margin: 20px 0px;
+            }
+            form{
+                display: flex;
+                margin-bottom : 20px;
+                input{
+                    color : #3D6184;
+                    font-size: 17px;
+                    font-weight: 400;
+                    border-radius: 5px 0px 0px 5px;
+                    border : none;
+                    padding: 10px;
+                    width: 65%;
+                    background-color: $header-input;
+                }
+                .btn{
+                    border-radius: 0px 5px 5px 0px ;
+                    font-size: 15px;
+                    font-weight:600;
+                }
+            }
+            .people{
+                display: flex;
+                align-items: center;
+                .images{
+                    img{
+                        width:150px;
+                    }
+                }
+                .text{
+                    p{
+                        line-height : 1.2;
+                        color : #fff;
+                        margin-left: 13px;
+                        font-size:12px;
+                        font-weight : 500;
+                    }
+                }
+            }
+        }
+        .col-2{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            @include medium-screen{
+                order : 1;
+            }
+            img{
+                position : absolute;
+                top: -40px;
+                width:100%;
+                @include medium-screen{
+                    position: relative;
+                    top: 10px;
+                    width: 70%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
