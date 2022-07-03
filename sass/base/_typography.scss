@@ -1,9 +1,10 @@
-p{
-  color : $text-color;
-  font-size:16px;
-  font-weight : 400;
+p {
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 30px;
 }
+
 ul {
   display: flex;
 }
@@ -16,21 +17,27 @@ a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  &:hover{
+
+  &:hover {
     opacity: .4;
-    
-}
+
+  }
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-.show{
-  display:contents !important;
+.show {
+  display: contents !important;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: -4%;
-  
+
 }
