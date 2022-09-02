@@ -1,63 +1,66 @@
-footer{
-    background : $footer-bg;
-    .request{
+footer {
+    background: $footer-bg;
+    .request {
         width: 70%;
-        margin : auto;
+        margin: auto;
         padding: 7rem 0;
         text-align: center;
-        h2{
-            font-size :62px;
-            font-weight :800;
+        h2 {
+            font-size: 62px;
+            font-weight: 800;
             line-height: 75px;
+            @include small-screen {
+                font-size: 50px;
+            }
         }
-        .btn{
-            margin : 80px 0;
-            font-size :18px;
-            padding:20px 24px;
+        .btn {
+            margin: 80px 0;
+            font-size: 18px;
+            padding: 20px 24px;
         }
     }
-    .list{
+    .list {
         display: grid;
-        grid-template-columns: 2fr repeat(3,1fr);
-        gap : 20px;
-        padding : 50px auto;
-        @include small-screen{
-            grid-template-columns: 2fr 1fr; 
+        grid-template-columns: 2fr repeat(3, 1fr);
+        gap: 20px;
+        padding: 50px auto;
+        @include small-screen {
+            grid-template-columns: 2fr 1fr;
         }
-        @include extra-small-screen{
-            grid-template-columns:1fr;
+        @include extra-small-screen {
+            grid-template-columns: 1fr;
         }
-        .col{
+        .col {
             padding-bottom: 20px;
-            p{
+            p {
                 width: 70%;
             }
-            ul{
+            ul {
                 display: flex;
                 flex-direction: column;
-                li{
-                    padding-bottom : 5px;
-                    &.bold{
-                        font-weight : bold;
-                        font-size :14px;
+                li {
+                    padding-bottom: 5px;
+                    &.bold {
+                        font-weight: bold;
+                        font-size: 14px;
                         padding-bottom: 10px;
                     }
-                    a{
-                        color:white;
+                    a {
+                        color: white;
                         font-size: 13px;
                         opacity: .7;
                     }
                 }
-                
+
             }
         }
     }
-    p.time{
-        font-size:14px;
+    p.time {
+        font-size: 14px;
         margin: auto;
         text-align: center;
-        padding : 40px 0;
-        color : white;
-        opacity : .9;
+        padding: 40px 0;
+        color: white;
+        opacity: .9;
     }
 }
