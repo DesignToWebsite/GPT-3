@@ -4,6 +4,10 @@
 
 GPT-3 Landing Page is a responsive template designed by [Ar. shakir](https://www.arshakir.com/project/freebie-gpt-3-landing-page).
 
+## View
+
+https://designtowebsite.github.io/GPT-3/
+
 ## Screenshot
 
 <p align="center">
